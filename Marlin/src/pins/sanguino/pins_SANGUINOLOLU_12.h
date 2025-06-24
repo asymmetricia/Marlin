@@ -37,6 +37,8 @@
  *  STB_11
  */
 
+#define SERVO0_PIN 30
+
 #ifndef BOARD_INFO_NAME
   #define BOARD_INFO_NAME "Sanguinololu 1.2"
 #endif
