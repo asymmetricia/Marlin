@@ -26,6 +26,11 @@ help:
 	@echo "  GIT_RESET_HARD       Used by CI: reset all local changes. WARNING:"
 	@echo "                       THIS WILL UNDO ANY CHANGES YOU'VE MADE!"
 
+.PHONY: upload
+upload:
+	. .venv/bin/activate && \
+	./buildroot/bin/mftest -a -u -n 1
+
 marlin:
 	./buildroot/bin/mftest -a
 .PHONY: marlin
