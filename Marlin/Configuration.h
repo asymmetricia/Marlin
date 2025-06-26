@@ -1199,7 +1199,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 99.156, 80.185, 4000, 144 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 99.156, 80.185, 4000, 150 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -2274,7 +2274,7 @@
  *    P1  Raise the nozzle always to Z-park height.
  *    P2  Raise the nozzle by Z-park amount, limited to Z_MAX_POS.
  */
-//#define NOZZLE_PARK_FEATURE
+#define NOZZLE_PARK_FEATURE
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z_raise }
