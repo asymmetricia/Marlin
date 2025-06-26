@@ -32,7 +32,8 @@ upload:
 	./buildroot/bin/mftest -a -u -n 1
 
 marlin:
-	./buildroot/bin/mftest -a
+	. .venv/bin/activate && \
+	./buildroot/bin/mftest -a -n 1
 .PHONY: marlin
 
 tests-single-ci:
